@@ -18,7 +18,7 @@ public class BenchmarkController {
     public String runBenchmark(@RequestParam("iterations") int iterations) {
         Runnable task = () -> {
             for (int i = 0; i < iterations; i++) {
-                fibonacci(20);
+                fibonacci(50);
             }
         };
 
